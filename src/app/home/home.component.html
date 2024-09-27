@@ -1,0 +1,138 @@
+
+    <div style="max-width: 75%; margin-left: auto; margin-right: auto; padding: 32px;">
+        <div style="width: 65%; border: 1px solid black;margin-top: 16px; margin-left: auto; margin-right: auto;  background-color: azure; border-radius: 30px; padding: 8px;">
+            
+            <div style="width: 96%; margin-left: auto; margin-right: auto; margin: 10px; display: flex; justify-content: space-between; align-items: center; background-color: white; border-radius: 30px; padding: 12px;">
+                <span style="display: flex;">
+                    <mat-icon>search</mat-icon>
+                    <span> Try "Dance"</span>
+                </span>
+                <span style="background-color: aqua; padding: 8px; border-radius: 30px;">
+                    Search
+                </span>
+                
+            </div>
+        </div>
+
+       
+        
+        <div *ngIf="activityList.length" style="display: flex; border: 1px solid black; margin-top: 20px;height: 70px;;padding: 16px;;border-radius: 10px; width: 100%; overflow-x: scroll; overflow-y: hidden;">
+            <div class="zoom" *ngFor="let activity of activityList" style="padding: 4px; cursor: pointer; margin-left: 40px;   display: flex;
+            flex-direction: column;
+            align-items: center;">
+                <img   [src]="activity.activity_image" height="32px" width="auto">
+                <p style="margin-top: 4px;text-align: center; ">{{activity.name}}</p>
+            </div>
+            
+            
+        </div>
+
+        <div style="display: flex; justify-content: space-between;  margin-bottom: 32px; margin-top: 32px;" >
+            <div style="width: 22%;  display: flex; flex-direction: column; align-items: center ; " *ngFor="let o of buzzupValues" >
+                <mat-icon style="height: 50px; font-size: 50px; width: 50px; margin-bottom: 16px;">{{o.icon}}</mat-icon>
+                <p style="margin: 0px; ">{{o.title}}</p>
+    
+    
+                <p style="text-align: justify;">{{o.subTitle}}</p>
+    
+            </div>
+    
+        </div>
+        
+        <div style="margin-top: 32px;">
+            <h2 class="mat-headline-large " style="margin: 12px;">29 million teachers to choose your home tutor from!</h2>
+           
+        </div>
+    
+        
+        
+        <div *ngIf="coachesList.length" style="display: flex;  width: 100%; overflow-x: scroll; overflow-y: hidden; margin-top: 12px;">
+            <div *ngFor="let activity of coachesList" style="margin-left: 16px; display: flex; flex-direction: column; max-width: 350px; height: 450px;"> 
+    
+                
+                <div style="position: relative;
+                overflow: hidden;
+                width: 350px;
+                max-width: 350px;
+                max-height: 350px;
+                color: white;">
+                <img  [src]="activity.profile_image"  height="350px" width="100%" style="border-radius: 10px; max-width: 350px; max-height: 350px;">
+    
+                    <p style="    position: absolute;
+                    bottom: -16px;
+                    width: 350px;
+                    padding: 12px 16px;
+                    background: black;
+                    opacity: 0.75;
+                    overflow: hidden;
+                    border-bottom-right-radius: 10px;
+                    border-bottom-left-radius: 10px;"
+                    >{{activity.name}}</p>
+    
+    <mat-icon style="position: absolute;
+    top: 8px;
+    right: 16px;">favorite</mat-icon>
+                </div>
+    
+                <div style="display: flex; align-items: center;">
+                    <mat-icon>star</mat-icon>
+                    <span style="margin-left: 12px;">4.3/5.0</span>
+    
+                    <!-- <mat-chip style="display: flex; justify-content: center; align-items: center;">
+                        <mat-icon>new_releases</mat-icon>
+                        New
+                      </mat-chip> -->
+                </div>
+    
+                <p style="color: black; margin: 0px;">{{activity.intro}}</p>
+    
+               
+                
+                
+            </div>
+        </div>
+
+        <div style="margin-bottom: 32px;">
+            <h2 class="mat-headline-large" style="margin: 12px;">How Buzzup works:</h2>
+            <div style="display: flex; justify-content: space-between;" >
+                <div style="height: 425px; overflow: hidden; padding :32px 32px 0px;width:  25%; border: 1px solid black ; border-radius: 16px;" *ngFor="let val of buzzupWorks">
+                    <p style="background-color: aqua; width: 40px; justify-content: center;border-radius: 10px;
+                    align-items: center;
+                    display: flex;height: 40px; text-align: center; padding: 8px; margin: 0px;">{{val.id}}</p>
+
+                    <h3 class="mat-headline-large">{{val.title}}</h3>
+
+                    <p>{{val.subTitle}}</p>
+
+                    <img width="100%" [src]="val.image">
+
+
+                </div>
+
+            </div>
+            
+        </div>
+    
+        <div style="display: flex; align-items: center; flex-direction: column; width: 100%; margin-bottom: 32px; border: 1px solid black; border-radius: 16px;">
+            <h1>Try us out Risk Free!</h1>
+
+            <p>Nothing is more important to us than making sure it’s a great match. That’s why we offer a no obligation risk-free trial lesson; if you aren’t completely satisfied the first lesson is free!</p>
+        </div>
+    
+
+        <div style="display: flex; justify-content: space-between; margin-bottom: 32px;">
+            <div style="width: 48%;">
+                <p style="font-size: 48px; width: 60%; margin-left: auto; margin-right: auto;" >Testimonials from Parents</p>
+                <p style="width: 60%; margin-left: auto; margin-right: auto;">
+                    Myra - Child
+                </p>
+            </div>
+            <video src="../../assets/big_buck_bunny_720p_1mb.mp4" style="width: 48%;"></video>
+
+        </div>
+
+       
+       
+    
+       
+    </div>

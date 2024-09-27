@@ -1,0 +1,21 @@
+<div style="max-width: 75%; margin-left: auto; margin-right: auto; padding: 32px;">
+    <div class="mat-title-medium">
+        {{aboutBuzzUp?.title}}
+    </div>
+    
+    <div *ngFor="let content of aboutBuzzUp.content_list">
+        <p>{{content?.content}}</p>
+    
+    </div>
+    
+    <div>
+        {{aboutTeam?.title}}
+    </div>
+    
+    <div *ngFor="let content of aboutTeam.content_list" style="display: flex; flex-direction: column; align-items: center;">
+        <img [src]="content?.content?.image" height="150px" width="150px" style="border-radius: 50%;">
+        <p>{{content?.content?.title}}</p>
+        <p>{{content?.content?.content}}</p>
+    
+    </div>
+</div>
