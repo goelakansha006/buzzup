@@ -9,36 +9,35 @@ import { ActivitiesComponent } from './activities/activities.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
-  {path: '', 
-    redirectTo : 'home',
-    pathMatch : 'full'
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  {
+    path: 'home',
+    component: HomeComponent,
   },
   {
-    path :'home',
-    component: HomeComponent
-  },{
     path: 'about',
-    component : AboutComponent
-  },{
-    path : 'faq',
-    component : FaqComponent
+    component: AboutComponent,
   },
   {
-    path : 'apps',
-    component : MobileAppsComponent
-  }
-  ,{
-    path : 'activity',
-    component: ActivitiesComponent
+    path: 'faq',
+    component: FaqComponent,
   },
   {
-    path  : 'user/:id',
-    component : UserProfileComponent
-  }
+    path: 'apps',
+    component: MobileAppsComponent,
+  },
+  {
+    path: 'activity',
+    component: ActivitiesComponent,
+  },
+  {
+    path: 'user/:id',
+    component: UserProfileComponent,
+  },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes), HomeModule],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
