@@ -6,6 +6,7 @@ import { AboutComponent } from './about/about.component';
 import { FaqComponent } from './faq/faq.component';
 import { MobileAppsComponent } from './mobile-apps/mobile-apps.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
 
 const routes: Routes = [
   {path: '', 
@@ -29,6 +30,10 @@ const routes: Routes = [
   ,{
     path : 'activity',
     component: ActivitiesComponent
+  },
+  {
+    path  : 'user/:id',
+    component : UserProfileComponent
   }
 ];
 

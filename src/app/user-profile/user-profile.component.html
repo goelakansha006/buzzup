@@ -1,0 +1,145 @@
+<div
+  style="max-width: 75%; margin-left: auto; margin-right: auto; padding: 32px"
+>
+  <div
+    style="
+      position: relative;
+      width: 100%;
+      height: 220px;
+      border: 1px solid black;
+      border-radius: 16px;
+    "
+  >
+    <img
+      [src]="coachData.profile.profile_image"
+      style="
+        position: absolute;
+        border: 1px solid black;
+        border-radius: 50%;
+        left: 20px;
+        height: 150px;
+        width: 150px;
+        top: 140px;
+      "
+    />
+    <div style="position: absolute; left: 200px">
+      <h1>{{ coachData.user.name }}</h1>
+      <p style="display: flex; align-items: center">
+        <mat-icon style="margin-right: 16px">call</mat-icon
+        >{{ coachData.profile.contact_number }}
+      </p>
+      <p style="display: flex; align-items: center">
+        <mat-icon style="margin-right: 16px">mail</mat-icon>
+        {{ coachData.profile.contact_email }}
+      </p>
+      <mat-chip
+        *ngFor="let lang of coachData.languages"
+        style="margin-left: 16px"
+      >
+        {{ lang.name }}</mat-chip
+      >
+    </div>
+  </div>
+
+  <div
+    style="
+      width: 100%;
+      margin-top: 80px;
+      padding: 16px;
+      border: 1px solid black;
+      border-radius: 16px;
+    "
+  >
+    <h1>About Me</h1>
+    <p>{{ coachData.profile.about }}</p>
+  </div>
+
+  <div
+    style="
+      width: 100%;
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid black;
+      border-radius: 16px;
+    "
+  >
+    <h1>Experience</h1>
+    <p>{{ coachData.profile.experience }}</p>
+  </div>
+
+  <div
+    style="
+      width: 100%;
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid black;
+      border-radius: 16px;
+    "
+  >
+    <h1>Activities</h1>
+    <div style="display: flex; align-items: center">
+      <div
+        *ngFor="let activity of coachData.activities"
+        style="
+          margin-right: 16px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        "
+      >
+        <img
+          [src]="activity.activity.activity_image"
+          width="auto"
+          style="height: 40px; border-radius: 50%"
+        />
+        <p>{{ activity.activity.name }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div
+    style="
+      width: 100%;
+      margin-top: 16px;
+      padding: 16px;
+      border: 1px solid black;
+      border-radius: 16px;
+    "
+  >
+    <h1>Offers</h1>
+
+    <div
+      *ngFor="let activity of coachData.activities"
+      
+    >
+    <mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel  style="margin-bottom: 16px;">
+          <mat-expansion-panel-header>
+            <mat-panel-title> {{activity.activity.name}} </mat-panel-title>
+            
+          </mat-expansion-panel-header>
+      
+              <div  style="display: flex; flex-wrap: wrap;">
+                <div *ngFor="let offer of activity.offers" >
+                    <div *ngIf="offer.offer_detail.is_active" style="border: 1px solid black; border-radius: 8px; padding: 0px 16px 16px 0px; margin-bottom: 16px; width: 180px; margin-right: 16px;">
+                        <p style="background-color: blue; color: white; border-radius: 8px 8px 0px 0px; margin: 0px; width: 180px; padding: 8px" >{{offer.offer_detail.name}}</p>
+                        <p style="margin-left: 16px">
+                            {{offer.offer_detail.description}}
+                        </p>
+                        <p style="display: flex; align-items: center; margin-left: 16px;"><mat-icon style="margin-right: 12px;">schedule</mat-icon>{{offer.offer_detail.unit}}</p>
+                        <p style="display: flex; align-items: center;margin-left: 16px"> <mat-icon style="margin-right: 12px;">location_on</mat-icon>{{offer.offer_city.name}}</p>
+                        <p style="display: flex; align-items: center;margin-left: 16px"> <mat-icon style="margin-right: 12px;">payments</mat-icon>{{offer.offer_detail.price}} <span style="margin-left: 8px;">{{offer.offer_detail.currency}}</span></p>
+                        
+                    </div>
+                    
+                </div>
+                
+              </div>
+           
+         
+          
+        </mat-expansion-panel>
+        </mat-accordion>
+    </div>
+  </div>
+</div>

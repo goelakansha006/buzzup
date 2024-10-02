@@ -14,6 +14,9 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatAccordion, MatExpansionModule} from '@angular/material/expansion';
 import { MobileAppsComponent } from './mobile-apps/mobile-apps.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { UserProfileComponent } from './user-profile/user-profile.component';
+import { MatIconModule } from '@angular/material/icon';
+import { MatChipsModule } from '@angular/material/chips';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,8 @@ import { ActivitiesComponent } from './activities/activities.component';
     AboutComponent,
     FaqComponent,
     MobileAppsComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    UserProfileComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +34,9 @@ import { ActivitiesComponent } from './activities/activities.component';
     MatToolbarModule,
     MatTabsModule,
     MatAccordion,
-    MatExpansionModule
+    MatExpansionModule,
+    MatIconModule,
+    MatChipsModule
   ],
   providers: [
     provideClientHydration(),

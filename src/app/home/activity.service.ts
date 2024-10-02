@@ -1448,4 +1448,479 @@ export class ActivityService {
       ]
     }
   }
+
+  getUSerData(){
+    return {
+      "user": {
+        "id": 82,
+        "email": null,
+        "is_active": null,
+        "is_natural": null,
+        "name": "Palak Dawani",
+        "registered_on": null,
+        "last_accessed_on": "2024-09-24T15:14:13.877515"
+      },
+      "profile": {
+        "id": 58,
+        "is_active": true,
+        "is_verified": true,
+        "registered_on": "2024-07-02T10:00:00",
+        "contact_number": "+919300407672",
+        "contact_email": "bhartidawani@gmail.com",
+        "intro": "Boost your brain, Crunch the numbers ",
+        "about": "Hi, I'm Palak Dawani, your coach for brain health, and I am excited to interact with you this session! Numbers are my playground! As a mental math enthusiast, I love the thrill of a good challenge. Whether it's crunching numbers, conquering Rubik's cubes, or diving into Sudoku puzzles, I'm always up for flexing my mental muscles. Let's see what we can learn from each other and push the boundaries of our skills!",
+        "experience": "Vedic Math Certification: Certified in Vedic Mathematics, specializing in advanced techniques for rapid and efficient mental calculations. With years of experience, I conduct engaging classes on solving Rubik's Cubes and mastering Sudoku puzzles. My interactive sessions are designed to enhance cognitive abilities and make learning fun.",
+        "profile_image": "https://api.buzzup.club/static/coach_58.jpg"
+      },
+      "languages": [
+        {
+          "id": 1,
+          "name": "English"
+        },
+        {
+          "id": 4,
+          "name": "Hindi"
+        }
+      ],
+      "activities": [
+        {
+          "activity": {
+            "id": 21,
+            "name": "Puzzle",
+            "activity_image": "https://api.buzzup.club/static/activity/ks.jpeg",
+            "is_class": null,
+            "is_exposed": true
+          },
+          "offers": [
+            {
+              "offer_detail": {
+                "id": 184,
+                "name": "Sudoku Puzzles ",
+                "is_active": true,
+                "description": "Age: 7 years and above",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 6,
+                "unit": "45 min",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 186,
+                "name": null,
+                "is_active": false,
+                "description": null,
+                "location": null,
+                "venue_name": null,
+                "venue_street_name": null,
+                "venue_building_number": null,
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": null,
+                "unit": null,
+                "currency": null,
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 4,
+                "name": "Blank",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 207,
+                "name": null,
+                "is_active": false,
+                "description": null,
+                "location": null,
+                "venue_name": null,
+                "venue_street_name": null,
+                "venue_building_number": null,
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": null,
+                "unit": null,
+                "currency": null,
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 4,
+                "name": "Blank",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            }
+          ],
+          "reviews": []
+        },
+        {
+          "activity": {
+            "id": 27,
+            "name": "Vedic Maths",
+            "activity_image": "https://api.buzzup.club/static/activity/ks.jpeg",
+            "is_class": null,
+            "is_exposed": true
+          },
+          "offers": [
+            {
+              "offer_detail": {
+                "id": 190,
+                "name": "Advanced Vedic Math Program ",
+                "is_active": true,
+                "description": "Age: 10 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 7,
+                "unit": "45 min",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 212,
+                "name": "Advanced Vedic Math Demo class",
+                "is_active": true,
+                "description": "Age : 10 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 3,
+                "unit": "30 min",
+                "currency": "€",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 2,
+                "name": "Trial",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            }
+          ],
+          "reviews": []
+        },
+        {
+          "activity": {
+            "id": 82,
+            "name": "Rubik's cube",
+            "activity_image": "https://api.buzzup.club/static/activity/ks.jpeg",
+            "is_class": null,
+            "is_exposed": true
+          },
+          "offers": [
+            {
+              "offer_detail": {
+                "id": 139,
+                "name": "3×3 Rubik's cube ",
+                "is_active": true,
+                "description": "8 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 5,
+                "unit": "45 min",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 180,
+                "name": "2×2 Rubik's Cube ",
+                "is_active": true,
+                "description": "8 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 5,
+                "unit": "45 min",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 181,
+                "name": "4×4 Rubik's Cube ",
+                "is_active": true,
+                "description": "9 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 7,
+                "unit": "45 min",
+                "currency": "Euro",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 182,
+                "name": "Pyramix Rubik's Cube ",
+                "is_active": true,
+                "description": "8 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 6,
+                "unit": "45 min",
+                "currency": "Euro",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 183,
+                "name": "Mirror Rubik's Cube ",
+                "is_active": true,
+                "description": "9 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 7,
+                "unit": "45 min",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 1,
+                "name": "Standard",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 185,
+                "name": "Customize offer for Rubik's cubes (3×3, 2×2, pyramix)",
+                "is_active": true,
+                "description": null,
+                "location": null,
+                "venue_name": null,
+                "venue_street_name": null,
+                "venue_building_number": null,
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 68,
+                "unit": "13 days(40 min per session)",
+                "currency": "Euro ",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 3,
+                "name": "Promotion",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            },
+            {
+              "offer_detail": {
+                "id": 213,
+                "name": "Rubiks Cube Demo class ",
+                "is_active": true,
+                "description": "8 years and above ",
+                "location": "",
+                "venue_name": "",
+                "venue_street_name": "",
+                "venue_building_number": "",
+                "venue_reference": null,
+                "venue_pin": null,
+                "venue_map_link": null,
+                "price": 3,
+                "unit": "30 min ",
+                "currency": "€",
+                "valid_from": null,
+                "valid_till": null
+              },
+              "offer_type": {
+                "id": 2,
+                "name": "Trial",
+                "description": null
+              },
+              "offer_city": {
+                "id": 24,
+                "name": "Online"
+              }
+            }
+          ],
+          "reviews": []
+        }
+      ],
+      "aux": {
+        "is_top": false,
+        "is_new": false,
+        "rating": null
+      }
+    }
+  }
+
+  getOfferDeatils(){
+    return {
+      "offer_detail": {
+        "id": 184,
+        "name": "Sudoku Puzzles ",
+        "is_active": true,
+        "description": "Age: 7 years and above",
+        "location": "",
+        "venue_name": "",
+        "venue_street_name": "",
+        "venue_building_number": "",
+        "venue_reference": null,
+        "venue_pin": null,
+        "venue_map_link": null,
+        "price": 6,
+        "unit": "45 min",
+        "currency": "Euro ",
+        "valid_from": null,
+        "valid_till": null
+      },
+      "offer_type": {
+        "id": 1,
+        "name": "Standard",
+        "description": null
+      },
+      "offer_city": {
+        "id": 24,
+        "name": "Online"
+      },
+      "activity": {
+        "id": 21,
+        "name": "Puzzle",
+        "activity_image": "https://api.buzzup.club/static/activity/ks.jpeg",
+        "is_class": null,
+        "is_exposed": true
+      },
+      "user": {
+        "id": null,
+        "email": null,
+        "is_active": null,
+        "is_natural": null,
+        "name": "Palak Dawani",
+        "registered_on": null,
+        "last_accessed_on": null
+      }
+    }
+  }
 }

@@ -47,7 +47,7 @@
         
         
         <div *ngIf="coachesList.length" style="display: flex;  width: 100%; overflow-x: scroll; overflow-y: hidden; margin-top: 12px;">
-            <div *ngFor="let activity of coachesList" style="margin-left: 16px; display: flex; flex-direction: column; max-width: 350px; height: 450px;"> 
+            <div *ngFor="let activity of coachesList" style="margin-left: 16px; display: flex; flex-direction: column; max-width: 350px; height: 450px;" (click)="showCoach(activity.coach_id)"> 
     
                 
                 <div style="position: relative;
