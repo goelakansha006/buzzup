@@ -4,23 +4,16 @@ import { ActivityService } from '../home/activity.service';
 @Component({
   selector: 'app-activities',
   templateUrl: './activities.component.html',
-  styleUrl: './activities.component.scss'
+  styleUrl: './activities.component.scss',
 })
 export class ActivitiesComponent implements OnInit {
-  activityList : any[] = []
-  constructor(private activitySvc: ActivityService){}
+  activityList: any[] = [];
+  constructor(private activitySvc: ActivityService) {}
   ngOnInit(): void {
-      
-    this.activityList = this.activitySvc.getActivities()
- 
+    this.activitySvc.getActivities().subscribe((data: any) => {
+      this.activityList = data;
+    });
 
-  // this.coachesList = this.activitySvc.getCoach()
-
-
-
-
-}
-
-  
-
+    // this.coachesList = this.activitySvc.getCoach()
+  }
 }

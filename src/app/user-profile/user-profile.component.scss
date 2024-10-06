@@ -1,0 +1,28 @@
+.screen-width {
+  max-width: 85%;
+  padding: 32px;
+}
+
+.coach-data {
+  left: 200px;
+}
+.coach-data-img {
+  left: 20px;
+  top: 140px;
+}
+
+@media screen and (max-width: 420px) {
+  .screen-width {
+    max-width: 90%;
+    padding: 12px;
+  }
+
+  .coach-data {
+    left: 32px;
+  }
+
+  .coach-data-img {
+    left: 190px;
+    top: 142px;
+  }
+}

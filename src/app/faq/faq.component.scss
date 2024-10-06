@@ -1,0 +1,12 @@
+.screen-width {
+    max-width: 85%;
+    padding: 32px;
+  }
+  
+  @media screen and (max-width: 420px) {
+    .screen-width {
+      max-width: 90%;
+      padding: 12px;
+    }
+  }
+  

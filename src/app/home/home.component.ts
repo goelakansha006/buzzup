@@ -69,7 +69,9 @@ export class HomeComponent implements OnInit {
   constructor(private activitySvc: ActivityService, private router: Router) {}
 
   ngOnInit(): void {
-    this.activityList = this.activitySvc.getActivities();
+    this.activitySvc.getActivities().subscribe((data: any) => {
+      this.activityList = data;
+    });
 
     this.coachesList = this.activitySvc.getCoach();
     this.coachesList = this.coachesList.filter((value, index, self) => {

@@ -1,9 +1,11 @@
-<mat-toolbar style="background-color: inherit; border-bottom: 1px solid black;" >
+<mat-toolbar style="background-color: inherit; border-bottom: 1px solid black; overflow: hidden;"  >
+    <button mat-button  [routerLink]="['/home']">
+        Home
+      </button>
     
-    <a [routerLink]="['/home']">Home</a>
-    <a style="margin-left: 16px;" [routerLink]="['/about']">About Us</a>
-    <a style="margin-left: 16px;" [routerLink]="['/activity']">Activities</a>
-    <a style="margin-left: 16px;" [routerLink]="['/faq']">FAQ</a>
-    <a style="margin-left: 16px;" [routerLink]="['/apps']">Mobile Apps</a>
+    <button mat-button  style="margin-left: 16px;" [routerLink]="['/about']">About Us</button>
+    <button mat-button  style="margin-left: 16px;" [routerLink]="['/activity']">Activities</button>
+    <button mat-button  style="margin-left: 16px;" [routerLink]="['/faq']">FAQ</button>
+    <button mat-button  *ngIf="isDesktop" style="margin-left: 16px;" [routerLink]="['/apps']">Mobile Apps</button>
 </mat-toolbar>
   

@@ -4,6 +4,7 @@ import { HomeComponent } from './home.component';
 import { HttpClientModule } from '@angular/common/http';
 import {MatIconModule} from '@angular/material/icon';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatButtonModule} from '@angular/material/button'
 
 
 @NgModule({
@@ -14,7 +15,8 @@ import {MatChipsModule} from '@angular/material/chips';
     CommonModule,
     HttpClientModule,
     MatIconModule,
-    MatChipsModule
+    MatChipsModule,
+    MatButtonModule,
   ]
 })
 export class HomeModule { }
